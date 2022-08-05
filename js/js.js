@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-let cells = document.querySelectorAll('.cell')
+
 
 for (let i = 0; i < 16; i++){
     let row = document.createElement('div');
@@ -11,12 +11,10 @@ for (let i = 0; i < 16; i++){
     }
 }
 
-cells.forEach((cell) => {
-    cell.addEventListener('mouseover', mouseOver);
+let cells = document.querySelectorAll('.cell')
+
+cells.forEach(cell => {
+    cell.addEventListener('mouseover', () => {
+        cell.style.backgroundColor = 'black';
+    });
 })
-
-
-function mouseOver() {
-    cells.style.color = "red";
-  }
-  
