@@ -1,15 +1,18 @@
 body {
     background-color: aqua;
-    margin: 0;
-    
 }
 
 div {
-    border: solid black;
-    padding: 20px;
-    flex: 1;
+    margin: 0;
+    justify-items: auto;
+    max-height: 20px;
 }
 
-.container {
-    display: flex;
+.cell {
+    border: solid black 0.5px;
+    background-color: aliceblue;
+    min-width: 20px;
+    min-height: 20px;
+    display:inline-flex;
+    
 }
