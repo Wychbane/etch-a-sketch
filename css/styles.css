@@ -16,3 +16,7 @@ div {
     display:inline-flex;
     
 }
+
+button {
+    margin: 20px;
+}
