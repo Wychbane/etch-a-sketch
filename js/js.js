@@ -43,7 +43,7 @@ function sketch() {
     let cells = document.querySelectorAll('.cell')
     cells.forEach(cell => {
         cell.addEventListener('mouseover', () => {
-            cell.style.backgroundColor = 'black';
+            cell.style.backgroundColor = `${randomColor()}`;
         });
     });
 }
@@ -52,4 +52,12 @@ function deleteGrid() {
     let grid = document.querySelectorAll('.cell')
     grid.forEach((e) => (e).remove());
 
+}
+
+// Function to select a random color
+function randomColor() {
+    let randColorR = Math.floor(Math.random()*256);
+    let randColorG = Math.floor(Math.random()*256);
+    let randColorB = Math.floor(Math.random()*256);
+    return `rgb(${randColorR}, ${randColorG}, ${randColorB})`;
 }
